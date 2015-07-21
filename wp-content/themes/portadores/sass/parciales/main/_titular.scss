@@ -1,0 +1,146 @@
+#titular {
+	position: relative;
+	width: 100%;
+	min-height: 60%;
+	background-image: url(../img/fondo-titular.jpg);
+	//background-repeat: repeat, no-repeat;
+	//background-position: bottom;
+	//background-color: #f2f9ff;
+	//overflow: hidden;
+
+	.container {
+		border-left: dotted 2px $azul-claro;
+		padding: 0 30px 30px;
+
+		.nada {
+			float: none;
+		}
+		
+
+		@media(min-width: 768px) {
+		}
+
+		@media(min-width: 992px) {
+			padding: 0 100px 60px 100px;
+		}
+
+		@media(min-width: 1200px) {
+		}
+	}
+
+	.lema {
+		position: relative;
+		margin-top: 40px;
+		margin-bottom: 140px;
+		border: none;
+
+		@media(min-width: 1200px) {
+			width: 50%;
+		}
+
+
+		p {
+			position: relative;
+			font-size: 1.5em;
+			font-weight: 300;
+			color: $azul-claro;
+			//width: 50%;
+			line-height: 1.2em;
+			padding-left: 15px;
+
+
+			@media(min-width: 992px) {
+				font-size: 2em;
+			}
+
+			&:before {
+			 	content: '“';
+	        	display:inline-block;
+	        	position: absolute;
+	        	left: -20px;
+	        	top: 10px;
+	        	font-weight: 800;
+	        	color:$azul-oscuro;
+	        	font-size: 2em;
+    		}
+
+    		&:after {
+	        	content: '”';
+	        	display:inline-block;
+	        	right: 0px;
+	        	font-weight: 800;
+	        	color:white;
+	        	color:$azul-claro;
+    		}
+		}
+	}
+
+	.intro {
+		color: white;
+		font-size: 400;
+		font-style: italic;
+		font-size: 1.5em;
+	}
+
+	h2 {
+		position: relative;
+		margin-top: 40px;
+		margin-bottom: 140px;
+		border: none;
+		text-transform: uppercase;
+		color: $azul-oscuro;
+		padding-top: 50px;
+		padding-left: 200px;
+
+		@media(min-width: 1200px) {
+			width: 60%;
+		}
+
+		[class*='icono-'] {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 180px;
+			height: 180px;
+			font-size: 180px;
+
+			&:before, &:after {
+				display: block;
+				position: absolute;
+				width: 180px;
+				height: 180px;
+			}
+
+			&:before {
+				color: lighten($azul-claro, 20);
+			}
+
+			&:after {
+				color: $azul-oscuro;
+			}
+		}
+	}
+
+	.intro-interna {
+		background-color: lighten($azul-claro, 35);
+
+		.container {
+			padding-top: 20px;
+			padding-bottom: 20px;
+
+
+			h2 {
+				padding:0;
+				margin: 20px 0; 
+			}
+		}
+
+		p {
+			color: $azul-claro;
+			font-style: italic;
+			font-size: 1.1em;
+			padding-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,46 @@
+#experiencia {
+	background-color: transparent !important;
+
+	//logos del home
+	ul {
+		margin: 40px 0 0;
+		padding: 0;
+		text-align: justify;
+
+		&:after {
+			display: inline-block;
+			width: 100%;
+			content: '';
+		}
+
+		.cliente {
+			display: inline-block;
+			width: 96px;
+			vertical-align: middle;
+			margin-right: 40px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			figure {
+
+				img {
+
+				}
+			}
+		}
+	}
+
+	//testimonios de la página interna
+	.testimonio {
+		margin-bottom: 100px;
+		border-bottom: 1px dotted lighten($azul-claro, 10);
+
+		.cliente {
+			//position: absolute;
+			//right: 0;
+			//bottom: 0;
+		}
+	}
+}

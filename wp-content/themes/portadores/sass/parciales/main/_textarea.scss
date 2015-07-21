@@ -1,0 +1,24 @@
+textarea {
+	@include transicion-rapida();
+	min-height: 200px;
+
+
+    &.form-control {
+    	height: 48px;
+        border:none;
+        box-shadow: none;
+        background-color: lighten($azul-claro, 30%);
+        font-size: 1.2em;
+        font-weight: 300;
+
+        @include input-placeholder {
+							//font-weight: 400;
+							color: $azul-claro;
+						}
+    }
+
+    &:focus {
+    	box-shadow: none !important;
+    	border: dotted 2px $azul-claro;
+    }
+}

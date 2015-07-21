@@ -1,0 +1,47 @@
+body {
+
+	#contenido {
+		background-image: url(../img/textura.png);
+	}
+
+	> section {
+		
+
+		> .container {
+			border-left: dotted 2px $azul-claro;
+			padding: 0 30px 30px;
+			position: relative;
+
+			> section {
+				padding-top: 60px;
+			}
+			
+
+			@media(min-width: 768px) {
+			}
+
+			@media(min-width: 992px) {
+				padding: 0 100px 60px 100px;
+			}
+
+			@media(min-width: 1200px) {
+			}
+		}
+	}
+}
+
+// .textura {
+// 	background-image: url(../img/textura.png);
+// }
+
+// .textura2 {
+// 	background-image: url(../img/textura2.png);
+// }
+
+// .textura3 {
+// 	background-image: url(../img/textura3.png);
+// }
+
+// .textura4 {
+// 	background-image: url(../img/textura4.png);
+// }

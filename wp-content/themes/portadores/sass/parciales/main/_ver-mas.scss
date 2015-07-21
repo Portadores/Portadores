@@ -1,0 +1,49 @@
+.ver-mas {
+	position: absolute;
+	right: 0px;
+	font-size: 14px;
+	display: inline-block;
+	text-align: right;
+	font-weight: 400;
+	text-transform: uppercase;
+	outline: none;
+	padding: 3px 8px;
+	background-color: #e3edf6;
+	//margin-top: 40px;
+	line-height: 1.5em;
+	cursor: pointer;
+	white-space: nowrap;
+	@include transicion-rapida();
+	@include border-radius(5px);
+
+	&:hover {
+		background-color: $azul-claro;
+		color: white;
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.ver-todo {
+	display: block;
+	text-align: right;
+	padding: 6px 20px;
+	margin: 30px 0px;
+	text-decoration: underline;
+	text-transform: uppercase;
+	color: $azul-oscuro;
+	font-size: 0.8em;
+	background-color: lighten($azul-claro, 36);
+	@include border-radius(5px);
+
+	&:hover {
+		color: $azul-claro;
+	}
+}
+
+.wrapper {
+
+}

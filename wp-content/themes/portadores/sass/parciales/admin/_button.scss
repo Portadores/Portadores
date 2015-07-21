@@ -1,0 +1,13 @@
+.button {
+  @include transicion-rapida();
+}
+
+.button-primary {
+  border: none !important;
+   @include box-shadow(none !important);
+  background-color: $color-corporativo-2 !important;
+  @include transicion-rapida();
+  &:hover {
+    background-color: $color-corporativo-1 !important;
+  }
+}

@@ -1,0 +1,78 @@
+
+[class*="isotipo"], [class^="icono-"], [class*=" icono-"], [class^="logo-"], [class*=" logo-"] {
+	@include icon();
+	@include transicion-basica();
+}
+
+.isotipo:before {
+	content: $isotipo;
+}
+
+.logo-gc:before {
+	content: $logo;
+}
+
+.logo-linkedin:before {
+	content: $logo-linkedin;
+}
+
+.logo-twitter:before {
+	content: $logo-twitter;
+}
+
+.icono-buscar:before {
+	content: $icono-buscar;
+}
+
+.icono-flecha-abajo:before {
+	content: $icono-flecha-abajo;
+}
+
+.icono-call-to-action-a:before {
+	content: $icono-call-to-action-a;
+}
+
+.icono-call-to-action-b:after {
+	content: $icono-call-to-action-b;
+}
+
+.icono-auditoria-gobierno-a:before {
+	content: $icono-auditoria-gobierno-a;
+}
+
+.icono-auditoria-gobierno-b:after {
+	content: $icono-auditoria-gobierno-b;
+}
+
+.icono-modelo-gobierno-a:before {
+	content: $icono-modelo-gobierno-a;
+}
+
+.icono-modelo-gobierno-b:after {
+	content: $icono-modelo-gobierno-b;
+}
+
+.icono-buenas-practicas-a:before {
+	content: $icono-buenas-practicas-a;
+}
+
+.icono-buenas-practicas-b:after {
+	content: $icono-buenas-practicas-b;
+}
+
+.icono-analisis-conflictos-a:before {
+	content: $icono-analisis-conflictos-a;
+}
+
+.icono-analisis-conflictos-b:after {
+	content: $icono-analisis-conflictos-b;
+}
+
+.icono-evaluacion-juntas-a:before {
+	content: $icono-evaluacion-juntas-a;
+}
+
+.icono-evaluacion-juntas-b:after {
+	content: $icono-evaluacion-juntas-b;
+}
+

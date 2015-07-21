@@ -1,0 +1,40 @@
+#noticias, .noticias {
+	ul {
+		list-style: none;
+		padding: 0px;
+		margin: 0px;
+
+		.noticia {
+			padding:10px 15px;
+
+			.cont {
+				position: relative;
+				border: dotted 2px $azul-claro;
+				@include border-radius(20px);
+				padding: 30px  30px 80px 30px;
+			}
+
+			h3 {
+				color: $azul-oscuro;
+				font-size: 1.5em;
+				margin: 0;
+			}
+
+			p {
+				color: $azul-oscuro;
+				font-size: 1em;
+			}
+
+			.fecha-autor {
+				display: block;
+				font-size: 0.6em;
+				text-transform: uppercase;
+			}
+
+			.ver-mas {
+				right: 30px;
+				bottom: 20px;
+			}
+		}
+	}
+}

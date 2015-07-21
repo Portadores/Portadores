@@ -1,0 +1,24 @@
+
+[class^="icono-"], [class*=" icono-"], [class^="logo-"], [class*=" logo-"] {
+  @include icon();
+  @include transicion-basica();
+}
+
+#wp-admin-bar-site-name > .ab-item:before {
+  color: white;
+  content: $isotipo !important;
+  @include icon();
+  @include transicion-basica();
+}
+
+.view-list.current:before, .view-excerpt.current:before, .view-grid.current:before {
+  color: $color-corporativo-1 !important;
+}
+
+.welcome-panel a[class*="-icon"]:before {
+  color: $color-corporativo-1;
+}
+
+#wp-admin-bar-wp-logo .ab-icon:before {
+  color: lighten($color-corporativo-1, 10);
+}

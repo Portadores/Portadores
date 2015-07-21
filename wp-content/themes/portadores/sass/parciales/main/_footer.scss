@@ -1,0 +1,111 @@
+#footer {
+	background-color: #002c53;
+	height: auto;
+
+	.container {
+		position: relative;
+		min-height: 460px;
+		background-image: url(../img/isotipo-footer.png);
+		background-repeat: no-repeat;
+		background-position: left center;
+		padding-top: 100px;
+
+		#logo-footer {
+			width: 221px;
+			height: 118px;
+			margin: 0 auto;
+
+			.logo-gc-mb {
+				width: 220px;
+				height: auto;
+			}
+		}
+
+		.direccion {
+			font-size: 0.9em;
+			color: white;
+			text-align: center;
+			margin-top:80px; 
+
+			@media(min-width: 768px) {
+				position: absolute;
+				bottom:40px;
+				text-align: left;
+
+				&#bogota {
+					left: 0px;
+				}
+
+				&#madrid {
+					left: 250px;
+				}
+			}
+		}
+
+		#redes-footer {
+			bottom: 60px;
+			font-size: 0;
+			width: 100%;
+			text-align: center;
+			margin: 50px auto;
+
+			a {
+				display: inline-block;
+
+				&.linkedin {
+					margin-left:10px; 
+				}
+
+				&.twitter {
+
+					i {
+
+						&:before {
+							font-size: 34px;
+							top: -12px;
+							left: -2px;
+						}
+					}
+				}
+
+				i {
+					display: inline-block;
+					position: relative;
+					width: 28px;
+					height: 28px;
+
+					&:before {
+						@include transicion-rapida();
+						display: block;
+						position: absolute;
+						top: -10px;
+						left: 0px;
+						width: 28px;
+						height: 28px;
+						font-size: 28px;
+						color: white;
+					}
+
+					&:hover {
+
+						&:before {
+							color: $azul-claro;
+						}
+					}
+				}
+			}
+
+			@media(min-width: 768px) {
+				margin: 0;
+				width: auto;
+				text-align: right;
+				position: absolute;
+				right: 0;
+			}
+		}
+
+		#mail-skype {
+			font-size: 14px;
+		}
+	}
+}

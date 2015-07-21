@@ -1,0 +1,35 @@
+.avatar {
+  display: block !important;
+  @include border-radius(50% !important);
+  @include box-sizing(border-box !important);
+  &.avatar-default {
+    background-image: url(../img/foto-consultor.png);
+    &.avatar-50 {
+      padding-left: 50px;
+       @include background-size(50px 50px);
+    }
+  }
+  &.photo.avatar-64 {
+    background-image: url(../img/foto-consultor.png) !important;
+    padding-left: 64px  !important;
+     @include background-size(64px 64px !important);
+  }
+}
+
+#wp-admin-bar-my-account .avatar {
+  display: inline-block !important;
+  &.photo.avatar-26 {
+    padding-left: 26px  !important;
+    background-image: url(../img/foto-consultor.png) !important;
+     @include background-size(26px 26px !important);
+    border: none !important;
+    background-color: transparent !important;
+  }
+}
+
+@media (min-width: 992px) {
+  #wp-admin-bar-my-account .avatar.photo.avatar-26 {
+    padding-left: 16px  !important;
+    @include background-size(16px 16px !important);
+  }
+}

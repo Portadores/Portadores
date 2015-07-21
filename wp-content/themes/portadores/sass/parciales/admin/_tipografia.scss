@@ -1,0 +1,43 @@
+body, .media-frame, .media-modal {
+  font-family: $fuente-principal, sans-serif;
+}
+
+h2 {
+  color: $color-corporativo-1;
+}
+
+h3 {
+  color: $color-corporativo-1;
+  &.label {
+    color: $color-corporativo-1;
+  }
+}
+
+h4 {
+  color: $color-corporativo-1;
+}
+
+a, .ui-tabs-anchor {
+  @include transicion-rapida();
+  color: $color-corporativo-1;
+}
+
+a:hover, .ui-tabs-anchor:hover {
+  color: $color-corporativo-2;
+}
+
+label, th {
+  color: $gris-50;
+}
+
+.form-table th, .form-wrap label {
+  color: $gris-50 !important;
+}
+
+.update-plugins {
+  background-color: $rojo-alerta !important;
+}
+
+.plugin-title strong {
+  color: $color-corporativo-1;
+}

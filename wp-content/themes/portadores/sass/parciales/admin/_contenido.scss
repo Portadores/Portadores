@@ -1,0 +1,30 @@
+.plugins .active th.check-column {
+  border-left: 4px solid $color-corporativo-2;
+}
+
+// Option-Tree
+
+#option-tree-header, .option-tree-setting.is-section .open {
+  border: none;
+  background-color: $color-corporativo-2;
+  color: $color-corporativo-1;
+  @include box-shadow(none);
+}
+#option-tree-logo {
+  border: none;
+  a {
+    border: none;
+    &:before {
+      color: $color-corporativo-1;
+      border: none;
+    }
+  }
+}
+.option-tree-setting.is-section {
+  border: none;
+}
+#option-tree-header {
+  #option-tree-version span, #theme-version span {
+    border: none;
+  }
+}

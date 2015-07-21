@@ -1,0 +1,72 @@
+#publicaciones {
+	position: relative;
+	border: dotted 2px $azul-claro;
+	@include border-radius(20px);
+	margin-top: 60px;
+	padding-top: 0;
+	background-color: white;
+
+	h2 {
+		position: absolute;
+		top: -24px;
+		left: -10px;
+		margin: 0;
+		background-color: white;
+		padding: 0 10px 6px 10px;
+	}
+
+	> ul {
+		letter-spacing: -5px;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+
+		li {
+
+			&.publicacion {
+				display: inline-block;
+				float: none;
+				letter-spacing: 0px;
+			}
+
+			.portada-publicacion {
+				position: relative;
+				padding: 80px 20px 40px;
+				min-height: 360px;
+			}
+
+			.titulo-publicacion {
+				position: relative;
+				padding: 80px 20px 0 10px;
+				height: 320px;
+				//letter-spacing: 0px;
+
+
+				h3 {
+					font-size: 1em;
+					margin: 0 0 10px;
+					line-height: 1.3em;
+					font-weight: 400;
+					//letter-spacing: 0px;
+				}
+
+				.ano-publicacion {
+					display: block;
+					color: $azul-claro;
+					font-style: italic;
+					font-size: 0.8em;
+					line-height: 1.2em;
+					letter-spacing: 0px;
+				}
+
+				.ver-mas {
+					right: 20px;
+					bottom: 0;
+					letter-spacing: 0px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+#wpcontent {
+  #wpadminbar {
+    background-color: darken($color-corporativo-1, 10);
+    .ab-sub-secondary {
+      background-color: lighten($color-corporativo-2, 10);
+    }
+    .ab-icon:before {
+      color: $color-corporativo-2;
+    }
+    .ab-top-menu > li {
+      &.hover > .ab-item, &:hover > .ab-item, > .ab-item:focus {
+        background-color: $color-corporativo-2;
+        color: $color-corporativo-1;
+      }
+    }
+    &.nojq .quicklinks .ab-top-menu > li > .ab-item:focus {
+      background-color: $color-corporativo-2;
+      color: $color-corporativo-1;
+    }
+    .ab-top-menu > li {
+      &.hover > .ab-item {
+        .ab-icon:before, .ab-label {
+          color: $color-corporativo-1;
+        }
+      }
+      &:hover > .ab-item {
+        .ab-icon:before, .ab-label {
+          color: $color-corporativo-1;
+        }
+      }
+      > .ab-item:focus {
+        .ab-icon:before, .ab-label {
+          color: $color-corporativo-1;
+        }
+      }
+    }
+    &.nojq .quicklinks .ab-top-menu > li > .ab-item:focus {
+      .ab-icon:before, .ab-label {
+        color: $color-corporativo-1;
+      }
+    }
+    .ab-top-menu > li {
+      &.hover > .ab-item:before, &:hover > .ab-item:before, > .ab-item:focus:before {
+        color: $color-corporativo-1;
+      }
+    }
+    &.nojq .quicklinks .ab-top-menu > li > .ab-item:focus:before {
+      color: $color-corporativo-1;
+    }
+    .menupop .ab-sub-wrapper, .shortlink-input {
+      background-color: $color-corporativo-2;
+    }
+    .menupop .ab-sub-wrapper .ab-item:hover, .shortlink-input .ab-item:hover, .menupop .ab-sub-wrapper .ab-item:hover:before, .shortlink-input .ab-item:hover:before {
+      color: $color-corporativo-1;
+    }
+  }
+  .username {
+    color: $color-corporativo-1;
+  }
+}

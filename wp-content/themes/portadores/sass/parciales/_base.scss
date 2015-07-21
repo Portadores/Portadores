@@ -1,0 +1,137 @@
+// Compass
+@import "compass";
+
+// Pie
+@import "compass/css3/pie"; 
+@import "compass/css3";
+$pie-behavior: url(PIE.htc);
+
+// Fuente
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,800,700,700italic,800italic,600italic,600,500italic,500,400italic,300italic,300);
+$fuente-principal: 'Exo 2';
+
+
+// Colores Corporativos
+$rojo: #ef1c47;
+$verde: #10d9e8;
+$gris: #aaa;
+
+$color-corporativo-1: $rojo;
+$color-corporativo-2: $verde;
+
+// Colores Mensajes
+$rojo-alerta: #c13341;
+//$verde-alerta:;
+
+// Colores Redes Sociales
+$azul-twitter: #00aced;
+
+// Grises
+$gris-10:#1a1a1a;
+$gris-20:#333333;
+$gris-30:#4d4d4d;
+$gris-40:#666666;
+$gris-50:#808080;
+$gris-60:#999999;
+$gris-70:#b3b3b3;
+$gris-80:#cccccc;
+$gris-90:#e5e5e5;
+
+// Iconos
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?-fujowb");
+  src: url("../fonts/icomoon.eot?#iefix-fujowb") format("embedded-opentype"), url("../fonts/icomoon.woff?-fujowb") format("woff"), url("../fonts/icomoon.ttf?-fujowb") format("truetype"), url("../fonts/icomoon.svg?-fujowb#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+$isotipo: "\e600";
+$logo: "\e601";
+$logo-vertical: "\e602";
+
+$logo-mb: "\e603";
+$logo-mb-vert: "\e604";
+
+$logo-iaag-gcsa: "\e605";
+$logo-iaag-gcsa-vert: "\e606";
+
+$logo-linkedin: "\e61d";
+$logo-twitter: "\e61f";
+
+$icono-buscar: "\e61e";
+$icono-acceder: "\e607";
+$icono-flecha-abajo: "\e610";
+$icono-call-to-action-b: "\e611";
+$icono-call-to-action-a: "\e612";
+$icono-auditoria-gobierno-b: "\e613";
+$icono-auditoria-gobierno-a: "\e614";
+$icono-modelo-gobierno-b: "\e615";
+$icono-modelo-gobierno-a: "\e616";
+$icono-buenas-practicas-b: "\e617";
+$icono-buenas-practicas-a: "\e618";
+$icono-analisis-conflictos-b: "\e619";
+$icono-analisis-conflictos-a: "\e61a";
+$icono-evaluacion-juntas-b: "\e61b";
+$icono-evaluacion-juntas-a: "\e61c";
+
+$icono-excel-a: "\e608";
+$icono-excel-b: "\e609";
+$icono-pdf-a: "\e60a";
+$icono-pdf-b: "\e60b";
+$icono-ppt-a: "\e60c";
+$icono-ppt-b: "\e60d";
+$icono-word-a: "\e60e";
+$icono-word-b: "\e60f";
+
+// Opacidades
+$opacidad-10: 0.13;
+$opacidad-20: 0.2;
+$opacidad-30: 0.3;
+$opacidad-40: 0.4;
+$opacidad-50: 0.5;
+$opacidad-60: 0.6;
+$opacidad-70: 0.7;
+$opacidad-80: 0.8;
+$opacidad-90: 0.9;
+
+// Menú Administración
+$menu-admin-bg-color: white;
+$menu-admin-bg-color-hover: $verde;
+$menu-admin-bg-color-current: $rojo;
+
+$menu-admin-icono-color: darken($rojo, 10);
+$menu-admin-icono-color-hover: darken($rojo, 10);
+$menu-admin-icono-color-current: $rojo;
+
+$menu-admin-label-color: darken($rojo, 10);
+$menu-admin-label-color-hover: darken($rojo, 10);
+$menu-admin-label-color-current: darken($rojo, 10);
+
+
+$menu-admin-submenu-bg-color: darken($rojo, 10);
+$menu-admin-submenu-label-color: $verde;
+$menu-admin-submenu-label-color-hover: white;
+$menu-admin-submenu-label-color-current: white;
+
+$menu-admin-collapse-color: $verde;
+$menu-admin-collapse-color-hover: darken($rojo, 10);
+
+//Barra Administración
+$barra-admin-bg-color: darken($rojo, 10);
+$barra-admin-bg-color-hover: darken($rojo, 10);
+
+$barra-admin-logo-color: white;
+$barra-admin-logo-color-hover: darken($rojo, 10);
+
+$barra-admin-icono-color: $verde;
+$barra-admin-icono-color-hover: darken($rojo, 10);
+
+$barra-admin-label-color: white;
+$barra-admin-label-color-hover: darken($rojo, 10);
+
+
+$barra-admin-submenu-bg-color: $verde;
+$barra-admin-submenu-label-color: white;
+$barra-admin-submenu-label-color-hover: darken($rojo, 10);
+
+@import "modulos/all";

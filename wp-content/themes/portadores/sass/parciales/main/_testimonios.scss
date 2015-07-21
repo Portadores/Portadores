@@ -1,0 +1,69 @@
+#testimonios, #experiencia {
+	background-color: lighten($azul-claro, 35);
+
+	ul {
+		margin: 40px 0;
+		padding: 0;
+
+		.testimonio {
+			list-style: none;
+			
+
+			blockquote {
+				border: none;
+				text-align: left;
+				color: $azul-claro;
+				position: relative;
+
+
+				p {
+					font-style: italic;
+					font-size: 1em;
+					color: $azul-claro;
+
+					&:before {
+					 	content: '“';
+			        	display:inline-block;
+			        	position: absolute;
+			        	left: -20px;
+			        	top: 10px;
+			        	font-weight: 800;
+			        	color:$azul-oscuro;
+			        	font-size: 4em;
+		    		}
+
+		    		&:after {
+			        	content: '”';
+			        	display:inline-block;
+			        	right: 0px;
+			        	font-weight: 800;
+			        	color:white;
+			        	color:$azul-claro;
+		    		}
+				}
+
+				.autor {
+					text-align: right;
+					line-height: 1.2em;
+
+					&:before, &:after {
+						display: none;
+					}
+					
+
+					.nombre {
+						font-weight: 600;
+					}
+
+					.cargo {
+						text-align: right;
+						font-size: 0.7em;
+						display: block;
+						width: 50%;
+						float: right;
+					}
+				}
+			}
+		}
+	}
+}

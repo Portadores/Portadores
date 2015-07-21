@@ -1,0 +1,134 @@
+#prensa {
+
+	ul {
+		list-style: none;
+		padding: 0;
+		letter-spacing: -5px;
+
+		.nota-prensa {
+			padding: 0 30px 40px;
+			display: inline-block;
+			float: none;
+			vertical-align: top;
+			margin-bottom: 10px;
+
+			a {
+				display: block;
+				text-decoration: none;
+
+
+				.foto-prensa {
+					position: relative;
+					border: dotted 2px $azul-claro;
+					@include border-radius(10px);
+					padding: 14px;
+					background-color: white;
+					@include transicion-rapida();
+
+						i {
+							position: absolute;
+							//@include border-radius(10px);
+							top: 14px;
+							right: 14px;
+							bottom: 14px;
+							left: 14px;
+							display: block;
+							background-color: $azul-claro;
+							width: auto;
+							height: auto;
+							@include transicion-rapida();
+							@include opacity(0);
+
+							&:before {
+								position: absolute;
+								display: block;
+								top: 50%;
+								left: 50%;
+								color: white;
+								font-size: 48px;
+								margin-top: -24px;
+								margin-left: -24px;
+								z-index: 999;
+							}
+						}
+
+					img {
+
+
+					}
+				}
+
+				h3 {
+					display: block;
+					margin: 0;
+					padding: 24px 0;
+					border-bottom: dotted 2px $azul-claro;
+					font-size: 1em;
+					min-height: 115px;
+					//background-color: red;
+					@include transicion-rapida();
+				}
+
+				.datos-prensa {
+					padding: 20px 0;
+					color: $azul-claro;
+					line-height: 0.9em;
+					letter-spacing: 0;
+
+					.nombre-prensa {
+						font-size: 0.8em;
+						font-weight: 600;
+						font-style: italic;
+					}
+
+					.fecha-prensa {
+						font-size: 0.6em;
+						font-style: italic;
+					}
+				}
+
+				.ver-mas {
+					right: 30px;
+					bottom: 25px;
+					letter-spacing: 0;
+				}
+
+				&:focus {
+					outline: none;
+				}
+
+				&:hover, &:active {
+					text-decoration: none;
+					outline: none;
+
+					.foto-prensa {
+						border: dotted 3px $azul-oscuro;
+
+						i {
+							@include opacity($opacidad-70);
+						}
+					}
+
+					h3 {
+						
+						text-decoration: none !important;
+						color: $azul-claro;
+					}
+
+					span {
+						text-decoration: none !important;
+					}
+
+					.ver-mas {
+						background-color: $azul-claro;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}
+
+#link-original[href=""], #link-original[href=" "] {
+	display: none !important;
+}

@@ -1,0 +1,190 @@
+#equipo, .equipo {
+
+	&#entrada {
+
+		.row {
+
+			> li:nth-child(2) {
+
+				@media(min-width: 768px) {
+					//margin-right: 50px;
+				}
+
+				@media(min-width: 992px) {
+					margin-right: 60px;
+				}
+
+				@media(min-width: 1200px) {
+					margin-right: 250px;
+				}
+			}
+
+			> li:nth-child(3), > li:nth-child(4), > li:nth-child(5), > li:nth-child(6)  {
+				border-top: 1px solid $azul-oscuro;
+				padding-top: 50px;
+				margin-top: 50px;
+			}
+		}
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		&.row {
+			letter-spacing: -5px;
+		}
+	}
+
+		.consultor {
+			position: relative;
+			text-align: center;
+			padding-bottom: 100px;
+			line-height: 1.1em;
+			display: inline-block;
+			float: none;
+			letter-spacing: 0;
+			vertical-align: top;
+
+			@media(max-width: 600px) {
+				margin-top: 60px;
+			}
+
+			> a {
+				text-decoration: none;
+
+				&:hover {
+
+					h3 {
+						color: $azul-claro;
+					}
+
+					~ .ver-mas {
+						background-color: $azul-claro;
+						color: white;
+						text-decoration: none;
+					}
+				}
+			}
+
+			.foto {
+				padding: 0;
+				
+				&:empty {
+					background-image: url(../img/foto-consultor.png);
+					@include background-size(100% auto);
+				}
+
+				img {
+					@include border-radius(100%);
+					//overflow: hidden;
+				}
+
+				@media(min-width: 600px) {
+					margin: 50px;
+				}
+
+				@media(min-width: 992px) {
+					margin: 15px;
+				}
+			}
+
+			h3 {
+				color: $azul-oscuro;
+				font-weight: 600;
+				font-size: 1.3em;
+				@include transicion-rapida();
+			}
+
+			.correo {
+				text-decoration: none;
+				font-size: 0.8em;
+
+			}
+
+			.skype {
+				text-decoration: none;
+				color: $azul-oscuro;
+				font-weight: 600;
+				font-size: 0.8em;
+
+				.icono-skype {
+					display: inline-block;
+					width: 14px;
+					height: 14px;
+					background-image: url(../img/icono-skype.png);
+
+				}
+			}
+
+			.ver-mas {
+				bottom: 10px;
+			}
+
+			&.detalle {
+				text-align: left;
+				padding-bottom: 50px;
+
+				h4 {
+					font-size: 2em;
+				}
+
+				.datos {
+					line-height: 2em;
+					margin-bottom: 20px;
+
+					h3 {
+						font-size: 3em;
+						margin: 0;
+					}
+
+					.cargo {
+						font-size: 2em;
+						color: $azul-claro;
+					}
+
+					.correo {
+						font-size: 1.5em;
+					}
+
+					.skype {
+						font-size: 1.5em;
+					}
+				}
+
+				.formacion, .experiencia {
+					margin-top: 30px;
+
+					table {
+						width: 100%;
+
+						th {
+							display: none;
+						}
+
+						tr {
+							display: block;
+							margin-bottom: 20px;
+
+							td {
+								display: block;
+
+								&:first-child {
+									text-transform: uppercase;
+									border-bottom: 1px solid $azul-oscuro;
+									font-size: 1.2em;
+									padding: 5px 0;
+								}
+
+								&:last-child {
+									color: $azul-claro;
+								}
+							}
+						}
+					}
+
+				}
+			}
+		}
+}

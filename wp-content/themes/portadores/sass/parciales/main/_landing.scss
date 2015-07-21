@@ -1,0 +1,273 @@
+#landing {
+	background-color: $color-corporativo-1;
+
+	#experiencia {
+		background-color: white;
+
+		#mensaje-experiencia {
+			margin: 40px 0;
+		}
+
+		[class*="col"] {
+			position: relative;
+		}
+
+		#logo {
+			width: 120px;
+			height: auto;
+			margin: 0 auto; 
+			margin-top: 20px;
+		}
+
+		h2 {
+			text-align: center;
+			color: $rojo;
+			margin: 20px 0;
+			padding: 0;
+			font-size: 5em;
+			font-family: 'UniversLTStd-UltraCn';
+		}
+
+		p {
+			text-align: center;
+		}
+
+		label {
+			display: none;
+		}
+
+		input {
+			height: 60px;
+			line-height: 60px;
+			padding: 0 20px;
+			border: dotted 3px $color-corporativo-1;
+			font-size: 2em;
+			//font-family: 'verdana';
+			text-transform: uppercase;
+			font-weight: 300;
+
+			@include input-placeholder {
+				color: $verde;
+			}
+		}
+
+		[type="submit"] {
+			padding: 0;
+			border: none;
+			display: block;
+			height: 60px;
+			line-height: 60px;
+			width: 100%;
+			font-size: 2em;
+			background-color: $color-corporativo-2;
+			text-transform: uppercase;
+			
+
+			@media(min-width: 768px) {
+				margin-top: 156px;
+
+			}
+		}
+
+		#mensaje {
+			position: relative;
+			width: 100%;
+			height: 400px;
+
+			@media(min-width: 768px) {
+				height: 200px;
+			}
+
+			&:before {
+				display: block;
+				position: absolute;
+				content: '';
+				width: 20px;
+				height: 25px;
+				left: 0;
+				top: 0;
+				background-image: url(../img/isotipo.jpg);
+				@include background-size(cover); 
+
+				@media(min-width: 768px) {
+					width: 40px;
+					height: 50px;
+				}
+			}
+
+			&:after {
+				display: block;
+				position: absolute;
+				content: '';
+				width: 0;
+				height: 0;
+				border-style: solid;
+				left: 20px;
+				top: 0;
+				border-color: transparent $rojo transparent transparent;
+				border-width: 0 20px 20px 0;
+
+
+				@media(min-width: 768px) {
+					left: 51px;
+					border-width: 0 40px 40px 0;
+				}
+			}
+		}
+
+		textarea {
+			display: block !important;
+			position: absolute;
+			top: 0 !important;
+			right: 0 !important;
+			bottom: 0 !important;
+			left: 40px !important;
+			background-color: $rojo;
+			border: none;
+			width: 85%;
+			height: 100%;
+			font-size: 24px;
+			color: lighten($verde, 20);
+
+			@media(min-width: 768px) {
+				width: 100%;
+				left: 90px !important;
+			}
+			
+			@include border-radius(0);
+
+			@include input-placeholder {
+				color: white;
+				
+			}
+		}
+	}
+
+	#hashtag {
+		text-align: center;
+		background-color: white;
+		border-top: dotted 3px $color-corporativo-1;
+		padding: 70px 0;
+
+		#texto-hashtag {
+			margin: 0;
+			color: $verde;
+			font-family: 'UniversLTStd-UltraCn';
+			font-size: 3em;
+
+			@media(min-width: 768px) {
+				font-size: 5em;
+			}
+		}
+
+		#redes {
+			list-style: none;
+			padding: 0;
+			margin-top: 20px;
+
+			@media(min-width: 768px) {
+				margin-top: 0;
+			}
+
+			li {
+				width: 50px;
+				display: inline-block;
+				margin-left: 10px;
+			}
+
+			+ p {
+				font-size: 0.9em;
+			}
+		}
+	}
+
+	#cabezote {
+		background-color: $rojo;
+
+		.container {
+			position: relative;
+
+			img {
+				position: relative;
+				display: block;
+				z-index: 0;
+			}
+		}
+
+	}
+
+	#conteo {
+		background-color: white;
+
+		#contador {
+			width: 100%;
+			text-align: center;
+			font-size: 24px;
+			//top: 100px;
+			//right: 140px;
+			//position: absolute;
+			z-index: 1;
+			color: $rojo;
+			//width: 200px;
+			line-height: 1em;
+			text-transform: uppercase;
+			padding: 40px 0;
+			font-weight: 400;
+
+			@media (min-width: 768px) {
+				font-size: 46px;
+			}
+
+			.texto {
+				color: $verde;
+				font-weight: 300;
+				text-transform: capitalize;
+			}
+		}
+	}
+
+	#formulario {
+		background-color: white;
+		padding-top:40px;
+		padding-bottom:40px;
+
+		label {
+			display: none;
+		}
+
+		input {
+			height: 60px;
+			line-height: 60px;
+			padding: 0 20px;
+			border: dotted 3px $color-corporativo-1;
+			font-size: 2em;
+			//font-family: 'verdana';
+			text-transform: uppercase;
+			font-weight: 300;
+		}
+
+		[type="submit"] {
+			padding: 0;
+			border: none;
+			display: block;
+			height: 60px;
+			line-height: 60px;
+			width: 100%;
+			font-size: 2em;
+			background-color: $color-corporativo-2;
+			text-transform: uppercase;
+		}
+
+		p {
+			margin: 10px 0 0;
+		}
+	}
+
+	#redes {
+
+	}
+
+	#footer {
+		background-color: $color-corporativo-2;
+	}
+}
